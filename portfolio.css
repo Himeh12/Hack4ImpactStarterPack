@@ -1,0 +1,114 @@
+:root {
+    --cg-black: rgb(30, 32, 32);
+    --cg-blue: rgb(36, 94, 255);
+    --cg-grey: rgb(243, 243, 243);
+    --cg-white: rgb(255, 255, 255);
+    --cg-light-grey: #f8f8f8; /* For background */
+    --cg-dark-grey: rgb(50, 50, 50); /* For text */
+    --cg-border-radius: 8px; /* For rounded corners */
+}
+
+body {
+    background: var(--cg-grey);
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--cg-black);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cg-white);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 36px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Adds space between list items */
+}
+
+.nav-list a {
+    color: var(--cg-white);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: var(--cg-border-radius);
+}
+
+.nav-list a:hover {
+    background-color: var(--cg-blue);
+}
+
+/* Project Section */
+.project {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--cg-light-grey);
+    border-radius: var(--cg-border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    max-width: 100%; /* Makes the image responsive */
+    border-radius: var(--cg-border-radius);
+}
+
+.project-name {
+    margin-top: 10px;
+}
+
+.project-name h1 {
+    font-size: 24px;
+    color: var(--cg-dark-grey);
+}
+
+.project-description p {
+    font-size: 16px;
+    color: var(--cg-dark-grey);
+    line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--cg-blue);
+    color: var(--cg-white);
+    padding: 10px 15px;
+    border-radius: var(--cg-border-radius);
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--cg-dark-grey);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cg-black);
+    color: var(--cg-white);
+    padding: 10px;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
