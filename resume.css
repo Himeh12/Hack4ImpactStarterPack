@@ -113,6 +113,7 @@ body {
 .course-list {
     display: flex;
     flex-direction: column;
+    color: var(--cg-black);
     gap: 10px;
 }
 
@@ -134,5 +135,5 @@ body {
     background-color: var(--cg-black);
     color: var(--cg-white);
     padding: 10px;
-    margin-top: auto; /* Pushes the footer to the bottom */
+    margin-top: auto; 
 }

@@ -51,7 +51,6 @@ body {
     background-color: var(--cg-blue);
 }
 
-/* Contact Form Styling */
 .contact {
     max-width: 800px;
     margin: 40px auto;
@@ -88,7 +87,7 @@ select {
     border-radius: var(--cg-border-radius);
     margin-bottom: 15px;
     font-size: 14px;
-    color: var(--cg-white);
+    color: var(--cg-black);
     background-color: var(--cg-dark_grey);
 }
 
